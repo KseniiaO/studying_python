@@ -20,6 +20,7 @@ with open(logs, 'r') as file:
 file.close()
 
 if len(datestamp) > 0:
-    print("Requests per month for IP address", ip, datestamp)
+    for i, j in datestamp.items():
+        print(f"{i} - number of requests: {j} ")
 else:
-    print("Sorry, there is no IP address", ip, "in the logs")
+    print(f"Sorry, I couldn't find IP address {ip} in the logs")
