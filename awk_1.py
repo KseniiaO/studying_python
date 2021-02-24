@@ -14,6 +14,8 @@ with open(logs, "r") as file:
                 user_agents[key] = 1 # adds new key with value 1
         except IndexError: # if a line is too short,the script skips it
             pass
+        
+file.close()
 
 # sort by value to find the most popular user agent
 sorted_list = sorted(user_agents.items(), key=lambda y: y[1], reverse = True)
