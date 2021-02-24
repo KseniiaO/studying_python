@@ -5,7 +5,6 @@
 import re
 
 datestamp = {}
-
 logs = input("Please provide full path to the apache log file: ")
 ip = input("Please enter IP address: ")
 
